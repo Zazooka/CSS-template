@@ -1,0 +1,296 @@
+html, body
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+}
+
+.my-page
+{
+    display: none;
+}
+
+
+.my-header-image
+{
+    width: 100%;
+    height: auto;
+}
+
+.my-icon-back
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 12%;
+    height: auto;
+}
+
+.my-content
+{
+    font-family: sans-serif;
+    color: #FFFFFF;
+}
+
+.my-content h1, .large-font
+{
+    font-size: 150%;
+}
+
+.my-content p, .my-content ul
+{
+    font-size: 120%;
+}
+
+.large-padding
+{
+    padding: 64px;
+}
+
+.medium-padding
+{
+    padding: 32px;
+}
+
+.small-margin-top
+{
+    margin-top: 16px;
+}
+.xs-margin-top
+{
+    margin-top: 8px;
+}
+
+.full-name-textbox
+{
+    width: 98%;
+    height: 32px;
+    background: #7B7B7B;
+    border-color: transparent;
+    font-size: 16px;
+    color: #C2C2C2;
+    text-align: center
+}
+
+.login-button
+{
+    width: 100%;
+    height: 32px;
+    background: #1F7E48;
+    border-color: transparent;
+    font-size: 16px;
+    color: #C2C2C2;
+}
+
+.invisible
+{
+    display: none;
+
+}
+
+.more-button
+{
+    width: 100%;
+    border-color: transparent;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 70%;
+}
+
+.card 
+{
+    background:#FFF;
+    border-bottom:3px none #BBB;
+    margin: 15px;
+    overflow:hidden;
+}
+
+.card h2, .card p, .card-detail
+{
+    margin: 15px;
+    font-family: sans-serif;
+    color: #5E5E5E;
+}
+
+.display-picture
+{
+    width: 140px;
+    height: 140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.notification-details-picture
+{
+    height: 60%;
+    width:100%;
+}
+
+.card-image 
+{
+    width:100%;
+    height:200px;
+    padding:0px;
+    margin:0px;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:relative;
+    overflow:hidden;
+}
+
+.back-button
+{
+    position: absolute;
+    padding: 4px;
+}
+
+.top-right
+{
+    position: absolute;
+    right: 0px;
+    padding:7px;
+}
+
+.menu-text
+{
+    float: right;
+    padding: 7px;
+}
+
+.circular
+{
+    border-radius: 300px;
+}
+
+.intro-text
+{
+    color: #A6A6A6;
+    font-family: sans-serif;
+}
+
+#background-picture
+{
+    background-image: url(../img/placeholder_blank_new.jpg);
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    display: block;
+    filter: blur(5px);
+    -webkit-filter: blur(20px);
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+#profile-picture
+{
+    top: -40%;
+    position: relative;
+    margin-bottom: -60%;
+}
+
+#notification
+{
+    background-color: #DADADA;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+#more
+{
+    background-color: #DADADA;
+    padding: 15px;
+    padding-top: 1px;
+}
+
+ul#actions
+{
+    display: none;
+    list-style-type: none;
+    background-color: #FF0000;
+    padding: 0px;
+    margin: 0px;
+}
+
+.actions:hover ul#actions
+{
+    display: block;
+}
+
+/*
+Taken from http://jsfiddle.net/V8aL6/2/
+*/
+#nav{
+    list-style:none;
+    margin: 5px;
+    /* Clear floats */
+    float:left;
+    width:100%;
+    font-size: 16px;
+    position:relative;
+    z-index:5;
+    
+}
+#nav li{
+    float:left;
+    position:relative;
+}
+#nav a{
+    display:block;
+    padding:5px;
+    color:#fff;
+    background:#333;
+    text-decoration:none;
+}
+#nav a:hover{
+    color:#fff;
+    background:#6b0c36;
+    text-decoration:underline;
+}
+
+/*--- DROPDOWN ---*/
+#nav ul{
+    background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
+    background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
+    list-style:none;
+    position:absolute;
+    margin-top: 10px;
+    display:none /*If menu item is not hovered hide sub-menu*/
+}
+#nav ul li{
+    padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
+    float:none;
+    margin-right:0;
+}
+#nav ul a{
+    white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
+}
+#nav li:hover ul{ /* Display the dropdown on hover */
+    display: block; /*DISPLAY ONLY WHEN ITEM IS HOVERED*/
+    right: 0;
+}
+#nav li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    background:#424242;
+    text-decoration:underline;
+}
+#nav li:hover ul a{ /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration:none;
+}
+#nav li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background:#333;
+}
+#dropdown-content li
+{
+    width: 150px;
+}
+
+

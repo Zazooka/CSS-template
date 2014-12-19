@@ -1,0 +1,13 @@
+{
+  "name"         : "JAKY",
+  "version"      : "1.0.0",
+  "description"  : "This project is used so I can change html files without iphone device.",
+  "main"         : "server.js",
+  "dependencies" : {
+    "express"         : "~4.6.1",
+    "mongoose"        : "~3.8.13",
+    "morgan"          : "~1.1.1",
+    "body-parser"     : "~1.4.3",
+    "method-override" : "~2.1.1"
+  }
+}
